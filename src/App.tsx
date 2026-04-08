@@ -314,11 +314,11 @@ export default function App() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="space-y-4">
-                <img src="https://picsum.photos/seed/work1/400/500" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
-                <img src="https://picsum.photos/seed/work2/400/300" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
+                <img src="img1.jpeg" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
+                <img src="img2.jpeg" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
               </div>
               <div className="space-y-4 pt-8">
-                <img src="https://picsum.photos/seed/work3/400/300" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
+                <img src="img3.jpeg" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
                 <img src="https://picsum.photos/seed/work4/400/500" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
               </div>
             </motion.div>
