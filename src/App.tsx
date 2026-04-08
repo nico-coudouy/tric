@@ -394,7 +394,7 @@ export default function App() {
               </div>
               
               <div className="h-[400px] overflow-hidden rounded-2xl bg-tric-blue/5">
-                {/* Placeholder for map */}
+                {<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.05461794484!2d-57.60053405!3d-38.01756665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1775674966495!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
                 <div className="flex h-full w-full items-center justify-center bg-tric-blue/5 text-tric-blue/20">
                   <MapPin size={100} strokeWidth={1} />
                 </div>
