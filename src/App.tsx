@@ -191,7 +191,7 @@ export default function App() {
           >
             <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
               <img 
-                src="https://picsum.photos/seed/plumber/800/1000" 
+                src="tric_logo.png" 
                 alt="Servicio de Plomería" 
                 className="h-[600px] w-full object-cover"
                 referrerPolicy="no-referrer"
