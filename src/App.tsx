@@ -319,7 +319,7 @@ export default function App() {
               </div>
               <div className="space-y-4 pt-8">
                 <img src="img3.jpeg" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
-                <img src="https://picsum.photos/seed/work4/400/500" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
+                <img src="img4.jpeg" alt="Trabajo" className="rounded-2xl object-cover" referrerPolicy="no-referrer" />
               </div>
             </motion.div>
           </div>
