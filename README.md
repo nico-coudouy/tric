@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# TRiC — Soluciones Integrales
 
-# Run and deploy your AI Studio app
+Sitio web institucional para TRiC, empresa de servicios de plomería, gas y electricidad en Mar del Plata.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/898f7b4d-bf8c-40f3-9bc4-9362067ecc9a
+- **React + TypeScript** — Vite
+- **Tailwind CSS**
+- **Framer Motion** — animaciones
 
-## Run Locally
+## Secciones
 
-**Prerequisites:**  Node.js
+- Hero con llamada a la acción y botón de WhatsApp
+- Servicios: plomería, gasista matriculado y electricidad certificada
+- Por qué elegirnos: presupuestos transparentes, puntualidad y garantía
+- Tipos de clientes: hogares, consorcios y empresas
+- Zona de cobertura con mapa de Google Maps
+- CTA de contacto por WhatsApp
+- Botón flotante de WhatsApp
 
+## Correr localmente
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Requisitos:** Node.js 18+
+
+1. Clonar el repositorio
+2. Instalar dependencias:
+```bash
+   npm install
+```
+3. Correr el servidor de desarrollo:
+```bash
+   npm run dev
+```
+
+## Deploy
+
+Configurado para desplegarse en Vercel. Cada push a `main` genera un deploy automático.
