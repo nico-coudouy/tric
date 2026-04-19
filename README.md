@@ -2,7 +2,7 @@
 
 Institutional website for **TRiC Servicios Integrales**, a service company based in Argentina. Designed to present the company's service catalog, build credibility, and provide a direct contact channel for new clients.
 
-🔗 **Live:** [TRiC URL — agregar cuando esté público]
+🔗 **Live:** (https://tric-ten.vercel.app/)
 
 ---
 
