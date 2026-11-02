@@ -1,5 +1,7 @@
 export const BRAND = 'TriC';
 export const BRAND_FULL = 'TriC Soluciones Integrales';
+export const OWNER = { name: 'Alejandro Coudouy', firstName: 'Alejandro', initials: 'AC', years: 30 };
+
 export const SITE_URL = 'https://tric-ten.vercel.app';
 
 export const PHONE_DISPLAY = '223 522-2755';

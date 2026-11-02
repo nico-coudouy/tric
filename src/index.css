@@ -9,6 +9,7 @@
   /* Variante para texto chico sobre blanco o botones con texto blanco (contraste AA 4.8:1) */
   --color-tric-orange-dark: #C8461A;
   --color-tric-gray: #F0F4F5;
+  --color-tric-cream: #FAF7F2;
 }
 
 html {
