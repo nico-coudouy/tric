@@ -24,6 +24,7 @@ export const NAV_LINKS = [
   { name: 'Servicios', href: '#servicios' },
   { name: 'Quién soy', href: '#quien-soy' },
   { name: 'Clientes', href: '#clientes' },
+  { name: 'Preguntas', href: '#preguntas' },
   { name: 'Contacto', href: '#contacto' },
 ];
 
@@ -66,4 +67,12 @@ export const WORK_PHOTOS = [
   { src: '/trabajo-2.webp', w: 675, h: 900, alt: 'Tablero eléctrico abierto durante una medición con pinza amperométrica' },
   { src: '/trabajo-3.webp', w: 900, h: 675, alt: 'Ambiente en obra con instalación de luminarias en el techo' },
   { src: '/trabajo-4.webp', w: 675, h: 900, alt: 'Baño terminado con mampara y revestimiento de madera' },
+];
+
+export const FAQ = [
+  { q: '¿Cobran la visita?', a: 'No. La visita y el presupuesto son sin cargo.' },
+  { q: '¿Hacen factura?', a: 'Sí, emitimos factura por todos los trabajos.' },
+  { q: '¿Trabajan con consorcios?', a: 'Sí. Hacemos mantenimiento preventivo y correctivo para edificios y administraciones.' },
+  { q: '¿En qué zonas trabajan?', a: 'En todo Mar del Plata, Batán y alrededores.' },
+  { q: '¿Cuánto tardan en llegar a una urgencia?', a: '20 minutos o menos. Escribinos por WhatsApp y salimos para allá.' },
 ];
