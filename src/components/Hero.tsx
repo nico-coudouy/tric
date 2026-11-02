@@ -29,15 +29,12 @@ export default function Hero() {
 
           <h1 className="mt-8 font-display text-[2.6rem] font-extrabold leading-[1.05] tracking-tight text-tric-blue sm:text-6xl">
             Hola, soy {OWNER.firstName}.{' '}
-            <span className="text-tric-blue/55">Arreglo lo de</span>{' '}
-            <span className="relative whitespace-nowrap text-tric-orange">
-              agua, gas y luz
-            </span>{' '}
-            <span className="text-tric-blue/55">de tu casa.</span>
+            <span className="text-tric-orange">Plomero, gasista y electricista</span>{' '}
+            <span className="text-tric-blue/55">en <span className="whitespace-nowrap">Mar del Plata.</span></span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-tric-blue/75">
-            Más de {OWNER.years} años trabajando en Mar del Plata. Presupuesto sin cargo y precio claro antes de empezar.
+            Más de {OWNER.years} años de oficio. Presupuesto sin cargo y precio claro antes de empezar.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
