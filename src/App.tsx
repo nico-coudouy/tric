@@ -2,7 +2,7 @@ import { MotionConfig } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import WhyUs from './components/WhyUs';
+import About from './components/About';
 import Clients from './components/Clients';
 import Coverage from './components/Coverage';
 import Contact from './components/Contact';
@@ -18,7 +18,7 @@ export default function App() {
         <main>
           <Hero />
           <Services />
-          <WhyUs />
+          <About />
           <Clients />
           <Coverage />
           <Contact />

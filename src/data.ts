@@ -2,6 +2,12 @@ export const BRAND = 'TriC';
 export const BRAND_FULL = 'TriC Soluciones Integrales';
 export const OWNER = { name: 'Alejandro Coudouy', firstName: 'Alejandro', initials: 'AC', years: 30 };
 
+/** Matrículas: completar con los números reales. Las que queden en null no se muestran. */
+export const LICENSES: { label: string; number: string | null }[] = [
+  { label: 'Gasista matriculado', number: null },
+  { label: 'Electricista matriculado', number: null },
+];
+
 export const SITE_URL = 'https://tric-ten.vercel.app';
 
 export const PHONE_DISPLAY = '223 522-2755';
@@ -16,7 +22,7 @@ export function whatsappUrl(message = 'Hola! Quiero pedir un presupuesto.') {
 export const NAV_LINKS = [
   { name: 'Inicio', href: '#inicio' },
   { name: 'Servicios', href: '#servicios' },
-  { name: 'Nosotros', href: '#nosotros' },
+  { name: 'Quién soy', href: '#quien-soy' },
   { name: 'Clientes', href: '#clientes' },
   { name: 'Contacto', href: '#contacto' },
 ];
