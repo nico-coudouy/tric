@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Outfit", sans-serif;
-  
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
   --color-tric-blue: #002B49;
   --color-tric-orange: #F15A24;
+  /* Variante para texto chico sobre blanco o botones con texto blanco (contraste AA 4.8:1) */
+  --color-tric-orange-dark: #C8461A;
   --color-tric-gray: #F0F4F5;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

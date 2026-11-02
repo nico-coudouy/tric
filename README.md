@@ -1,96 +1,65 @@
-# TRiC Servicios Integrales — Corporate Website
+# TriC Soluciones Integrales — Sitio web
 
-Institutional website for **TRiC Servicios Integrales**, a service company based in Argentina. Designed to present the company's service catalog, build credibility, and provide a direct contact channel for new clients.
+Landing page de **TriC Soluciones Integrales**, servicio de plomería, gas (gasista matriculado) y electricidad en Mar del Plata y alrededores. El objetivo del sitio es uno solo: que el cliente escriba por **WhatsApp**.
 
-🔗 **Live:** (https://tric-ten.vercel.app/)
-
----
-
-## 📸 Preview
-<img width="1897" height="900" alt="image" src="https://github.com/user-attachments/assets/213be42d-94d7-4c00-a30c-f8088c11dafb" />
-
-<!-- Agregá acá una captura del hero o del catálogo de servicios -->
-<!-- Ejemplo: ![TRiC — Hero](./public/preview.png) -->
+🔗 **Online:** https://tric-ten.vercel.app/
 
 ---
 
-## ✨ Features
+## ✨ Qué incluye
 
-- **Branded hero** — Custom visual identity with illustrated characters
-- **Service catalog** — Clear presentation of the company's offering
-- **About us** — Company story, values, and differentiators
-- **Contact flow** — Form submission and WhatsApp direct channel
-- **Responsive design** — Mobile-first layout for all devices
-- **Custom illustrations** — Character artwork integrated into the brand experience
-- **Smooth animations** — Section transitions and micro-interactions for engagement
+- **Contacto por WhatsApp en un toque**: todos los botones abren WhatsApp con un mensaje precargado según el servicio o la urgencia, más un botón flotante.
+- **Teléfono clickeable** (`tel:`) para llamar desde el celular.
+- **SEO local**: meta description, Open Graph (vista previa al compartir el link), datos estructurados `Plumber`/`Electrician` (JSON-LD), `robots.txt` y `sitemap.xml`.
+- **HTML prerenderizado**: el contenido viene en el HTML inicial (no depende de JavaScript para que lo lean Google o las vistas previas) y React lo hidrata después.
+- **Accesibilidad**: contraste AA en textos chicos, `aria-label` en botones de ícono, animaciones que respetan "reducir movimiento".
+- **Performance**: imágenes en WebP con dimensiones declaradas y carga diferida; logo y favicon en SVG.
 
----
+## 🛠 Stack
 
-## 🛠 Tech Stack
+- React 19 + TypeScript
+- Vite 6 (build cliente + build SSR para prerender)
+- Tailwind CSS 4
+- Motion (animaciones)
+- Lucide (íconos)
+- Deploy en Vercel
 
-- **Framework:** React 18 + TypeScript
-- **Build tool:** Vite
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Deployment:** Vercel
-
----
-
-## 🚀 Getting Started
-
-**Requirements:** Node.js 18+
-
-```bash
-# Clone the repository
-git clone https://github.com/nico-coudouy/<repo-name>.git
-cd <repo-name>
-
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
-The site will be available at `http://localhost:5173`.
-
-### Build for production
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## 📦 Deployment
-
-Continuous deployment via **Vercel**. Pushes to `main` trigger a new production build.
-
----
-
-## 📝 Project Structure
+## 📁 Estructura
 
 ```
 .
-├── public/
-│   ├── characters/     # Custom illustrated characters
-│   └── assets/         # Logo, favicon, backgrounds
+├── public/                 # Fotos (WebP), favicon, imagen OG, robots, sitemap
+├── scripts/
+│   └── prerender.mjs       # Inserta el HTML renderizado en dist/index.html
 ├── src/
-│   ├── components/     # Reusable React components
-│   ├── sections/       # Page sections (Hero, Services, About, Contact)
+│   ├── components/         # Una sección por componente (Hero, Services, …) + Logo
+│   ├── data.ts             # Textos, servicios, contacto y zonas: se editan acá
 │   ├── App.tsx
-│   └── main.tsx
-├── tailwind.config.js
-└── vite.config.ts
+│   ├── main.tsx            # Entrada cliente (hidrata el HTML prerenderizado)
+│   ├── entry-server.tsx    # Entrada SSR usada solo en el build
+│   └── index.css           # Tema: colores y fuentes de la marca
+└── index.html              # Meta tags, Open Graph y JSON-LD
 ```
 
+Para cambiar teléfono, servicios, zonas o fotos, editá `src/data.ts`.
+
+## 🚀 Desarrollo
+
+Requiere Node.js 18+.
+
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # build + prerender en dist/
+npm run preview   # sirve dist/ localmente
+npm run lint      # chequeo de tipos
+```
+
+## 📦 Deploy
+
+Vercel despliega automáticamente cada push a `main` usando `npm run build`.
+Si se cambia el dominio, actualizar la URL en `index.html` (canonical, Open Graph, JSON-LD), `public/robots.txt`, `public/sitemap.xml` y `src/data.ts`.
+
 ---
 
-## 👤 Author
-
-Built by **Nicolás Coudouy** — [LinkedIn](https://www.linkedin.com/in/nicocoudouy) · [GitHub](https://github.com/nico-coudouy)
-
----
-
-> Client project · Argentina · 2025
+Hecho por **Nicolás Coudouy** — [LinkedIn](https://www.linkedin.com/in/nicocoudouy) · [GitHub](https://github.com/nico-coudouy)
